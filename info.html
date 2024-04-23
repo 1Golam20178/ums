@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h> rabby</h> 
+    </header>
+    <main>
+<section class="mt-12">
+<div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+<div class="bg-green-500 p-8 rounded-lg ">
+<h4 class="text-center text-2xl text-white"> Your credit</h4>
+<h2 id="your-credit" class="text-center text-5xl text-white ">0</h2>
+
+</div>
+
+    <div class="bg-violet-500 p-8 rounded-lg ">
+        <h4 class="text-center text-2xl text-white"> Maximam credit</h4>
+        <h2 class="text-center text-5xl text-white">14</h2>
+        
+        </div>
+
+
+</div>
+
+</section>
+
+<section class="mt-12">
+    <div class="grid grid-cols-1 gap-4 w-9/12 mx-auto">
+        <div class="bg-fuchsia-500 p-8 rounded-lg ">
+        <h4 class=" text-2xl text-white mb-4"> Enter Credit</h4>
+        <input class="w-9/12 block mb-2 px-3" id="credit" type="number" placeholder="Your credit">
+       <button id="btn-credit" class="bg-amber-500 hover:bg-sky-600 px-6 py-1 text-white font-medium rounded-lg">Submit</button>
+    
+        
+
+</section>
+
+<h1 class=" text-3xl text-white font-bold text-center bg-amber-500 w-9/12 mx-auto p-6 mt-12">Select Your Course</h1>
+
+<select class="mt-8 mb-8" id="list" onchange="getseletValue();">
+
+<option value="Accounting">Accounting</option>
+<option value="Computer Fandamental">omputer Fandamental</option>
+<option value="Programming Language 1">Programming Language 1</option>
+<option value="EEE 1">EEE 1</option>
+<option value=" Algorithm">Algorithm</option>
+<option value="Data stracture">Data stracture</option>
+
+</select>
+
+
+
+    <div class="bg-green-500 p-8 rounded-lg grid grid-cols-2 gap-4 w-9/12 mx-auto ">
+    <h4 class="text-center text-2xl text-white"> Your Course</h4>
+    <h2 id="your-list" class="text-center text-1xl text-white "> </h2>
+    
+    </div>
+
+    </main>
+
+    <script src="js/credit.js"></script>
+    <script src="js/list.js"></script>
+</body>
+</html>
